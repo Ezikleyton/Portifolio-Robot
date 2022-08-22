@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220822 15:08:10.070" rpa="false" schemaversion="3">
+<suite id="s1" name="Udemy" source="c:\Users\ezikl\OneDrive\Documentos\ROBOT\udemy.robot">
+<test id="s1-t1" name="Test case 5 - Abrir navegador e acessar dentro do menu todos a categoria Amazon Fire TV" line="30">
+<kw name="Abrir navegador" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.br/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220822 15:08:10.315" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
+<status status="PASS" starttime="20220822 15:08:10.315" endtime="20220822 15:08:13.161"/>
+</kw>
+<status status="PASS" starttime="20220822 15:08:10.314" endtime="20220822 15:08:13.161"/>
+</kw>
+<kw name="Abrir menu Todos" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MENU_TODOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220822 15:08:13.162" endtime="20220822 15:08:13.189"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MENU_TODOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220822 15:08:13.190" level="INFO">Clicking element '//span[@class='hm-icon-label'][contains(.,'Todos')]'.</msg>
+<status status="PASS" starttime="20220822 15:08:13.189" endtime="20220822 15:08:13.272"/>
+</kw>
+<status status="PASS" starttime="20220822 15:08:13.162" endtime="20220822 15:08:13.272"/>
+</kw>
+<kw name="Selecionar Submenu Amazon Fire TV" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SUB_MENU_AMAZON_FIRETV}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220822 15:08:13.273" endtime="20220822 15:08:13.771"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUB_MENU_AMAZON_FIRETV}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220822 15:08:13.772" level="INFO">Clicking element '//li[contains(.,'Amazon Fire TV')]'.</msg>
+<status status="PASS" starttime="20220822 15:08:13.771" endtime="20220822 15:08:13.853"/>
+</kw>
+<status status="PASS" starttime="20220822 15:08:13.273" endtime="20220822 15:08:13.853"/>
+</kw>
+<status status="PASS" starttime="20220822 15:08:10.313" endtime="20220822 15:08:13.854"/>
+</test>
+<doc>Teste para checar funcionalidades no menu "todos" da amazon.</doc>
+<status status="PASS" starttime="20220822 15:08:10.077" endtime="20220822 15:08:13.856"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Udemy">Udemy</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
