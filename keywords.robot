@@ -1,10 +1,15 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library     XML
-Resource    elements/elements.robot
+Resource    elements\elements.robot
 
 
 *** Keywords ***
+Checar se contem o titulo "${TITULO}"
+    Title Should Be    ${TITULO}
+
+Verificar se contem "${TEXTO}"
+    Page Should Contain    text=${TEXTO}
 Abrir navegador
     Open Browser    https://www.amazon.com.br/    chrome
 

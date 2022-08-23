@@ -15,6 +15,8 @@ Test case 2 - Abrir navegador e acessar dentro do menu todos a categoria Mais ve
     Abrir navegador
     Abrir menu Todos
     Selecionar Mais vendidos
+    Checar se contem o titulo "Amazon.com.br Mais Vendidos: Os itens mais populares na Amazon"
+    Verificar se contem "Mais vendidos"
     Fechar navegador
 Test case 3 - Abrir navegador e acessar dentro do menu todos a categoria Novidades na Amazon
     Abrir navegador
