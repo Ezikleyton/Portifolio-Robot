@@ -22,6 +22,8 @@ Test case 3 - Abrir navegador e acessar dentro do menu todos a categoria Novidad
     Abrir navegador
     Abrir menu Todos
     Selecionar Novidades Amazon
+    Checar se contem o titulo "Amazon.com.br Novidades na Amazon: Os mais vendidos lançamentos novos e futuros no Amazon"
+    Verificar se contem "Novidades na Amazon"
     Fechar navegador
 
 Test case 4 - Abrir navegador e acessar dentro do menu todos a categoria Produtos em Alta
