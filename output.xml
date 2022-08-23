@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220822 21:35:48.525" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220822 21:41:22.395" rpa="false" schemaversion="3">
 <suite id="s1" name="Amazon" source="c:\Users\ezikl\OneDrive\Documentos\ROBOT\amazon.robot">
-<test id="s1-t1" name="Test case 2 - Abrir navegador e acessar dentro do menu todos a categoria Mais vendidos." line="14">
+<test id="s1-t1" name="Test case 3 - Abrir navegador e acessar dentro do menu todos a categoria Novidades na Amazon" line="21">
 <kw name="Abrir navegador" library="keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://www.amazon.com.br/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220822 21:35:48.861" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
-<status status="PASS" starttime="20220822 21:35:48.861" endtime="20220822 21:35:52.101"/>
+<msg timestamp="20220822 21:41:22.624" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
+<status status="PASS" starttime="20220822 21:41:22.624" endtime="20220822 21:41:25.729"/>
 </kw>
-<status status="PASS" starttime="20220822 21:35:48.860" endtime="20220822 21:35:52.101"/>
+<status status="PASS" starttime="20220822 21:41:22.623" endtime="20220822 21:41:25.730"/>
 </kw>
 <kw name="Abrir menu Todos" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${MENU_TODOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220822 21:35:52.102" endtime="20220822 21:35:52.132"/>
+<status status="PASS" starttime="20220822 21:41:25.731" endtime="20220822 21:41:25.763"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${MENU_TODOS}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220822 21:35:52.132" level="INFO">Clicking element '//span[@class='hm-icon-label'][contains(.,'Todos')]'.</msg>
-<status status="PASS" starttime="20220822 21:35:52.132" endtime="20220822 21:35:52.202"/>
+<msg timestamp="20220822 21:41:25.764" level="INFO">Clicking element '//span[@class='hm-icon-label'][contains(.,'Todos')]'.</msg>
+<status status="PASS" starttime="20220822 21:41:25.763" endtime="20220822 21:41:25.870"/>
 </kw>
-<status status="PASS" starttime="20220822 21:35:52.102" endtime="20220822 21:35:52.202"/>
+<status status="PASS" starttime="20220822 21:41:25.730" endtime="20220822 21:41:25.870"/>
 </kw>
-<kw name="Selecionar Mais vendidos" library="keywords">
+<kw name="Selecionar Novidades Amazon" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${MAIS_VENDIDOS}</arg>
+<arg>${NOVIDADES_AMAZON}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220822 21:35:52.203" endtime="20220822 21:35:52.660"/>
+<status status="PASS" starttime="20220822 21:41:25.872" endtime="20220822 21:41:26.336"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${MAIS_VENDIDOS}</arg>
+<arg>${NOVIDADES_AMAZON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220822 21:35:52.662" level="INFO">Clicking element '//*[@id="hmenu-content"]/ul[1]/li[2]'.</msg>
-<status status="PASS" starttime="20220822 21:35:52.661" endtime="20220822 21:35:54.747"/>
+<msg timestamp="20220822 21:41:26.337" level="INFO">Clicking element '//a[@href='/gp/new-releases/?ref_=nav_em_cs_newreleases_0_1_1_3'][contains(.,'Novidades na Amazon')]'.</msg>
+<status status="PASS" starttime="20220822 21:41:26.336" endtime="20220822 21:41:27.696"/>
 </kw>
-<status status="PASS" starttime="20220822 21:35:52.202" endtime="20220822 21:35:54.748"/>
+<status status="PASS" starttime="20220822 21:41:25.871" endtime="20220822 21:41:27.696"/>
 </kw>
-<kw name="Checar se contem o titulo &quot;Amazon.com.br Mais Vendidos: Os itens mais populares na Amazon&quot;" library="keywords" sourcename="Checar se contem o titulo &quot;${TITULO}&quot;">
+<kw name="Checar se contem o titulo &quot;Amazon.com.br Novidades na Amazon: Os mais vendidos lançamentos novos e futuros no Amazon&quot;" library="keywords" sourcename="Checar se contem o titulo &quot;${TITULO}&quot;">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>${TITULO}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220822 21:35:54.753" level="INFO">Page title is 'Amazon.com.br Mais Vendidos: Os itens mais populares na Amazon'.</msg>
-<status status="PASS" starttime="20220822 21:35:54.749" endtime="20220822 21:35:54.753"/>
+<msg timestamp="20220822 21:41:27.702" level="INFO">Page title is 'Amazon.com.br Novidades na Amazon: Os mais vendidos lançamentos novos e futuros no Amazon'.</msg>
+<status status="PASS" starttime="20220822 21:41:27.698" endtime="20220822 21:41:27.702"/>
 </kw>
-<status status="PASS" starttime="20220822 21:35:54.748" endtime="20220822 21:35:54.753"/>
+<status status="PASS" starttime="20220822 21:41:27.697" endtime="20220822 21:41:27.702"/>
 </kw>
-<kw name="Verificar se contem &quot;Mais vendidos&quot;" library="keywords" sourcename="Verificar se contem &quot;${TEXTO}&quot;">
+<kw name="Verificar se contem &quot;Novidades na Amazon&quot;" library="keywords" sourcename="Verificar se contem &quot;${TEXTO}&quot;">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>text=${TEXTO}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220822 21:35:54.774" level="INFO">Current page contains text 'Mais vendidos'.</msg>
-<status status="PASS" starttime="20220822 21:35:54.755" endtime="20220822 21:35:54.774"/>
+<msg timestamp="20220822 21:41:27.723" level="INFO">Current page contains text 'Novidades na Amazon'.</msg>
+<status status="PASS" starttime="20220822 21:41:27.703" endtime="20220822 21:41:27.723"/>
 </kw>
-<status status="PASS" starttime="20220822 21:35:54.754" endtime="20220822 21:35:54.774"/>
+<status status="PASS" starttime="20220822 21:41:27.703" endtime="20220822 21:41:27.723"/>
 </kw>
 <kw name="Fechar navegador" library="keywords">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220822 21:35:54.775" endtime="20220822 21:35:56.890"/>
+<status status="PASS" starttime="20220822 21:41:27.724" endtime="20220822 21:41:29.834"/>
 </kw>
-<status status="PASS" starttime="20220822 21:35:54.775" endtime="20220822 21:35:56.891"/>
+<status status="PASS" starttime="20220822 21:41:27.724" endtime="20220822 21:41:29.835"/>
 </kw>
-<status status="PASS" starttime="20220822 21:35:48.858" endtime="20220822 21:35:56.891"/>
+<status status="PASS" starttime="20220822 21:41:22.621" endtime="20220822 21:41:29.836"/>
 </test>
 <doc>Teste para checar funcionalidades no menu "todos" da amazon.</doc>
-<status status="PASS" starttime="20220822 21:35:48.535" endtime="20220822 21:35:56.892"/>
+<status status="PASS" starttime="20220822 21:41:22.400" endtime="20220822 21:41:29.837"/>
 </suite>
 <statistics>
 <total>
@@ -81,6 +81,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220822 21:35:48.846" level="ERROR">Error in file 'c:\Users\ezikl\OneDrive\Documentos\ROBOT\keywords.robot' on line 4: Resource file 'elementselements.robot' does not exist.</msg>
+<msg timestamp="20220822 21:41:22.610" level="ERROR">Error in file 'c:\Users\ezikl\OneDrive\Documentos\ROBOT\keywords.robot' on line 4: Resource file 'elementselements.robot' does not exist.</msg>
 </errors>
 </robot>
